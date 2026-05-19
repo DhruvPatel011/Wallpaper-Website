@@ -22,7 +22,32 @@
 
 <!-- Replace your <nav>...</nav> with this -->
 
+<nav>
+  <!-- Home -->
+  <a href="index.html" class="nav-link">Home</a>
 
+  <!-- Saved Wallpapers -->
+  <a href="#" id="savedBtn" class="nav-link">Saved</a>
+
+  <!-- Category Dropdown -->
+  <select id="navCategorySelect" class="nav-select">
+    <option value="all">Categories</option>
+    <option value="nature">Nature</option>
+    <option value="anime">Anime</option>
+    <option value="cars">Cars</option>
+    <option value="gaming">Gaming</option>
+    <option value="space">Space</option>
+  </select>
+
+  <!-- Infinite Loop Toggle -->
+  <button
+    id="slideshowToggle"
+    class="nav-icon-btn"
+    title="Auto Slideshow"
+  >
+    ∞
+  </button>
+</nav>
       <button id="themeToggle">🌙</button>
     </div>
   </header>
