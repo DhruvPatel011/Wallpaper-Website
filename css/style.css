@@ -374,7 +374,7 @@ body.light .save-btn {
 /* Replace your existing @media (max-width: 768px) .nav CSS with this */
 /* Theme toggle button will stay in the same row as menu items */
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .nav {
     display: flex;
     flex-wrap: wrap;
