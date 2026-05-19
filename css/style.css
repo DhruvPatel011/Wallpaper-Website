@@ -410,6 +410,46 @@ body.light .save-btn {
 
 }
 
+/* Mobile Responsive (iPhone, Samsung, Android phones) */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 1rem 0.75rem;
+  }
+
+  /* Logo full width and centered */
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+  }
+
+  /* Navigation centered and wrapped */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  /* Navigation links */
+  nav a {
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  /* Theme toggle button */
+  #themeToggle {
+    margin: 0;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+  }
+}
+
 
 
 .nav-categories {
