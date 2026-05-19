@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper Preview</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">4K Wallpapers</div>
+
+      <div class="nav-categories">
+        <a href="index.html?category=nature">Nature</a>
+        <a href="index.html?category=anime">Anime</a>
+        <a href="index.html?category=cars">Cars</a>
+        <a href="index.html?category=gaming">Gaming</a>
+        <a href="index.html?category=space">Space</a>
+      </div>
+
+      <div class="search-box small">
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+  </header>
+
+<!-- preview.html -->
+<!-- Remove ALL <br> tags and replace your entire preview section with this clean code -->
+
+<section class="preview-page">
+  <div class="container preview-container">
+
+    <a href="index.html" class="back-btn">
+      ← Back
+    </a>
+    
+    <!-- Breadcrumb -->
+    <p class="breadcrumb">
+      <span id="previewCategory">Nature</span> /
+      <span id="previewTitle">Wallpaper Title</span>
+    </p>
+
+    <!-- Description -->
+    <p class="preview-description" id="previewDescription">
+      Download this high-quality wallpaper in 4K and original resolution.
+    </p>
+
+    <!-- Main Image -->
+    <div class="preview-image-box">
+      <img
+        id="previewImage"
+        src=""
+        alt="Wallpaper Preview"
+      >
+    </div>
+
+    <!-- Download Buttons -->
+    <div class="preview-actions">
+      <a
+        id="download4k"
+        class="btn"
+        download
+      >
+        Download in 4K
+      </a>
+
+      <a
+        id="downloadOriginal"
+        class="btn"
+        download
+      >
+        Download Original
+      </a>
+    </div>
+
+    <!-- Categories -->
+    <div class="meta-block">
+      <h3>Categories</h3>
+      <div
+        class="badge-group"
+        id="categoryBadges"
+      ></div>
+    </div>
+
+    <!-- Tags -->
+    <div class="meta-block">
+      <h3>Tags</h3>
+      <div
+        class="badge-group"
+        id="tagBadges"
+      ></div>
+    </div>
+
+    <!-- Related Wallpapers -->
+    <section class="related-section">
+      <h2>Related Wallpapers</h2>
+
+      <div
+        class="gallery"
+        id="relatedWallpapers"
+      ></div>
+    </section>
+
+  </div>
+</section>
+
+
+  <script src="js/wallpapers.js"></script>
+  <script src="js/preview.js"></script>
+</body>
+</html>

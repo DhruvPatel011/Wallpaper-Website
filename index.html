@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallpaper Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+        <div class="logo">
+          <span class="logo-wallpaper">Wallpaper</span>
+          <span class="logo-hub">Hub</span>
+      </div>
+<!-- Replace ONLY the <nav>...</nav> section in index.html and preview.html -->
+
+<!-- Replace your current <nav>...</nav> in index.html and preview.html with this -->
+
+<!-- Replace your <nav>...</nav> with this -->
+
+<nav>
+  <!-- Home -->
+  <a href="index.html" class="nav-link">Home</a>
+
+  <!-- Saved Wallpapers -->
+  <a href="#" id="savedBtn" class="nav-link">Saved</a>
+
+  <!-- Category Dropdown -->
+  <select id="navCategorySelect" class="nav-select">
+    <option value="all">Categories</option>
+    <option value="nature">Nature</option>
+    <option value="anime">Anime</option>
+    <option value="cars">Cars</option>
+    <option value="gaming">Gaming</option>
+    <option value="space">Space</option>
+  </select>
+
+  <!-- Infinite Loop Toggle -->
+  <button
+    id="slideshowToggle"
+    class="nav-icon-btn"
+    title="Auto Slideshow"
+  >
+    ∞
+  </button>
+</nav>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1>Download Stunning Wallpapers</h1>
+      <p>Nature, Anime, Cars, Gaming, Space and more in high resolution.</p>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search wallpapers..." />
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="anime">Anime</button>
+        <button class="filter-btn" data-category="cars">Cars</button>
+        <button class="filter-btn" data-category="gaming">Gaming</button>
+        <button class="filter-btn" data-category="space">Space</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="gallery" id="galleryContainer"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Wallpaper Hub</h2>
+      <p>
+        Wallpaper Hub is a beautiful static website built with HTML, CSS, and JavaScript.
+        Browse, search, preview, and download wallpapers instantly.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Wallpaper Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <span class="close" id="closeModal">×</span>
+    <img id="modalImage" alt="Preview">
+    <a id="downloadBtn" download class="download-btn">Download</a>
+  </div>
+
+  <script src="js/wallpapers.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
